@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nomadiq Travel Destinations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4fefc;
+      color: #2a6771;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .site-header {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 32px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      border-bottom: 2px solid #a6cce3;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      color: #2a6771;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      margin-left: 24px;
+      text-decoration: none;
+      color: #2a6771;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #88b888;
+    }
+
+    .hero {
+      background-color: #fffaf0;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.125rem;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .about-section {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .about-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .destinations-section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .destinations-section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .destination-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .destination {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .destination h3 {
+      margin-top: 0;
+    }
+
+    .cta-section {
+      background-color: #e6f4f1;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .cta-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #2a6771;
+      color: #ffffff;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #245a63;
+    }
+
+    @media (min-width: 600px) {
+      .hero h1 {
+        font-size: 3rem;
+      }
+
+      .hero p,
+      .about-section p {
+        font-size: 1.2rem;
+      }
+
+      .cta-section h2 {
+        font-size: 2.2rem;
+      }
+
+      .cta-button {
+        font-size: 1.1rem;
+        padding: 14px 30px;
+      }
+
+      .destination-list {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">🌍 Nomadiq Travel Destinations</div>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Explore Sustainable Travel</h1>
+    <p>Discover the world while preserving it. Sustainable travel means making thoughtful choices that reduce your environmental impact, support local communities, and protect natural and cultural heritage for future generations.</p>
+  </section>
+
+  <section class="about-section">
+    <h2>About Nomadiq Travel Destinations</h2>
+    <p>Nomadiq Travel Destinations is committed to promoting eco-friendly adventures that inspire mindful exploration. We focus on partnering with local communities and sustainable operators to ensure your journeys are enriching, responsible, and leave a positive impact on the planet.</p>
+  </section>
+
+  <section id="destinations" class="destinations-section">
+    <h2>Top Sustainable Destinations</h2>
+    <div class="destination-list">
+      <div class="destination">
+        <h3>🌿 Costa Rica</h3>
+        <p>Known for its biodiversity and protected national parks, Costa Rica is a leader in eco-tourism.</p>
+      </div>
+      <div class="destination">
+        <h3>🏔️ New Zealand</h3>
+        <p>From fjords to rainforests, New Zealand offers unforgettable landscapes and strong conservation values.</p>
+      </div>
+      <div class="destination">
+        <h3>🌊 Iceland</h3>
+        <p>Powered by renewable energy and filled with natural wonders, Iceland is a model of sustainability.</p>
+      </div>
+      <div class="destination">
+        <h3>🌸 Japan</h3>
+        <p>Combining tradition with innovation, Japan offers sustainable travel experiences from countryside to city.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Ready to Begin Your Journey?</h2>
+    <a href="#" class="cta-button">Plan Your Trip</a>
+  </section>
+</body>
+</html>
